@@ -53,3 +53,17 @@ void loop() {
 }
 
 ```
+
+
+### Tabela dos componentes utilizados:
+
+| **Componente**                      | **Quantidade** | **Descrição / Função**                                                                 |
+|------------------------------------|----------------|-----------------------------------------------------------------------------------------|
+| LED Vermelho                       | 1              | Indica o sinal de **pare** no farol.                                                   |
+| LED Amarelo                        | 1              | Indica o sinal de **atenção** (transição entre verde e vermelho).                      |
+| LED Azul                           | 1              | Representa o sinal de **siga** (ou personalizado conforme o projeto IoT).              |
+| Arduino Uno                        | 1              | Microcontrolador responsável por controlar os LEDs e a lógica do farol.                |
+| Resistores                         | 3              | Limitam a corrente dos LEDs, evitando que queimem.                                     |
+| Jumpers (macho-macho / macho-fêmea)| 13             | Realizam as conexões entre o Arduino, os resistores e os LEDs.                         |
+| Estrutura de madeira (suporte)     | 1              | Suporte físico no formato de farol, onde os LEDs foram encaixados.                     |
+
