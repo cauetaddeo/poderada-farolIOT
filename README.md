@@ -99,10 +99,10 @@ void loop() {
 
 | Critério | Contempla (Pontos) | Contempla Parcialmente (Pontos) | Não Contempla (Pontos) | Observações do Avaliador |
 |-----------|--------------------|----------------------------------|------------------------|---------------------------|
-| Montagem física com cores corretas, boa disposição dos fios e uso adequado de resistores | Até 3 | Até 1,5 | 0   | Cores corretas com fios devidamente conectados
-| Temporização adequada conforme tempos medidos com auxílio de algum instrumento externo | Até 3 | Até 1,5 | 0  | O tempo está correto em cada led
-| Código implementa corretamente as fases do semáforo e estrutura do código (variáveis representativas e comentários) | Até 3 | Até 1,5 | 0 | Código foi comentado 
-| Ir além: Implementou um componente de extra, fez com millis() ao invés do delay() e/ou usou ponteiros no código | Até 1 | Até 0,5 | 0 | Usou milles
+| Montagem física com cores corretas, boa disposição dos fios e uso adequado de resistores | Até 3 | Até 1,5 | 0   | Cores corretas com fios devidamente conectados, 3
+| Temporização adequada conforme tempos medidos com auxílio de algum instrumento externo | Até 3 | Até 1,5 | 0  | O tempo está correto em cada led, 3
+| Código implementa corretamente as fases do semáforo e estrutura do código (variáveis representativas e comentários) | Até 3 | Até 1,5 | 0 | Código foi comentado, 3
+| Ir além: Implementou um componente de extra, fez com millis() ao invés do delay() e/ou usou ponteiros no código | Até 1 | Até 0,5 | 0 | Usou milles, 1
 | **Pontuação Total** | Total: 10 pontos |  |  |  |
 
 
@@ -113,9 +113,9 @@ void loop() {
 
 | Critério | Contempla (Pontos) | Contempla Parcialmente (Pontos) | Não Contempla (Pontos) | Observações do Avaliador |
 |-----------|--------------------|----------------------------------|------------------------|---------------------------|
-| Montagem física com cores corretas, boa disposição dos fios e uso adequado de resistores | Até 3 | Até 1,5 | 0   | Tudo perfeito
-| Temporização adequada conforme tempos medidos com auxílio de algum instrumento externo | Até 3 | Até 1,5 | 0  | Tempo batento com o necessário
-| Código implementa corretamente as fases do semáforo e estrutura do código (variáveis representativas e comentários) | Até 3 | Até 1,5 | 0 | Código bem comentado 
-| Ir além: Implementou um componente de extra, fez com millis() ao invés do delay() e/ou usou ponteiros no código | Até 1 | Até 0,5 | 0 | Usou milles
+| Montagem física com cores corretas, boa disposição dos fios e uso adequado de resistores | Até 3 | Até 1,5 | 0   | Tudo perfeito, 3
+| Temporização adequada conforme tempos medidos com auxílio de algum instrumento externo | Até 3 | Até 1,5 | 0  | Tempo batento com o necessário, 3
+| Código implementa corretamente as fases do semáforo e estrutura do código (variáveis representativas e comentários) | Até 3 | Até 1,5 | 0 | Código bem comentado, 3
+| Ir além: Implementou um componente de extra, fez com millis() ao invés do delay() e/ou usou ponteiros no código | Até 1 | Até 0,5 | 0 | Usou milles, 1
 | **Pontuação Total** | Total: 10 pontos |  |  |  |
 
