@@ -82,3 +82,32 @@ void loop() {
 1.3:
 ![Imagem do WhatsApp de 2025-10-28 à(s) 14 22 44_fa2ce59f](https://github.com/user-attachments/assets/2200a93c-f7aa-486f-bb51-10b26f9383d6)
 
+
+
+
+### Tabela de Avaliação entre Pares
+
+**Avaliador:** António Di Cilio
+
+| Critério | Contempla (Pontos) | Contempla Parcialmente (Pontos) | Não Contempla (Pontos) | Observações do Avaliador |
+|-----------|--------------------|----------------------------------|------------------------|---------------------------|
+| Montagem física com cores corretas, boa disposição dos fios e uso adequado de resistores | Até 3 | Até 1,5 | 0   | Cores corretas com fios devidamente conectados
+| Temporização adequada conforme tempos medidos com auxílio de algum instrumento externo | Até 3 | Até 1,5 | 0  | O tempo está correto em cada led
+| Código implementa corretamente as fases do semáforo e estrutura do código (variáveis representativas e comentários) | Até 3 | Até 1,5 | 0 | Código foi comentado 
+| Ir além: Implementou um componente de extra, fez com millis() ao invés do delay() e/ou usou ponteiros no código | Até 1 | Até 0,5 | 0 | Usou milles
+| **Pontuação Total** | 3 | 3 | 3 | 1 |
+
+
+
+### Tabela de Avaliação entre Pares
+
+**Avaliador:** Thúlio Bacco 
+
+| Critério | Contempla (Pontos) | Contempla Parcialmente (Pontos) | Não Contempla (Pontos) | Observações do Avaliador |
+|-----------|--------------------|----------------------------------|------------------------|---------------------------|
+| Montagem física com cores corretas, boa disposição dos fios e uso adequado de resistores | Até 3 | Até 1,5 | 0   | Tudo perfeito
+| Temporização adequada conforme tempos medidos com auxílio de algum instrumento externo | Até 3 | Até 1,5 | 0  | Tempo batento com o necessário
+| Código implementa corretamente as fases do semáforo e estrutura do código (variáveis representativas e comentários) | Até 3 | Até 1,5 | 0 | Código bem comentado 
+| Ir além: Implementou um componente de extra, fez com millis() ao invés do delay() e/ou usou ponteiros no código | Até 1 | Até 0,5 | 0 | Usou milles
+| **Pontuação Total** | 3 | 3 | 3 | 1 |
+
