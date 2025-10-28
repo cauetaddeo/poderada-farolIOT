@@ -9,48 +9,56 @@ https://youtube.com/shorts/qnlXVADWeZc?feature=share
 ### Código Utilizado:
 
 ```
+// Variável para guardar o tempo da última troca
 unsigned long tempoAnterior = 0;
+
+// Variável que indica em qual parte do ciclo o farol está
 int etapa = 0;
 
 void setup() {
-  pinMode(12, OUTPUT);
-  pinMode(8, OUTPUT);
-  pinMode(10, OUTPUT);
+  // Define os pinos dos LEDs como saídas
+  pinMode(12, OUTPUT); // LED vermelho
+  pinMode(8, OUTPUT);  // LED amarelo
+  pinMode(10, OUTPUT); // LED azul
   Serial.begin(9600);
 }
 
 void loop() {
+  // Pega o tempo atual desde que o Arduino foi ligado 
   unsigned long tempoAtual = millis();
 
+  // Escolhe o que fazer dependendo da etapa do ciclo
   switch (etapa) {
-    case 0: // LED 12 aceso por 6s
-      digitalWrite(12, HIGH);
-      if (tempoAtual - tempoAnterior >= 6000) {
-        digitalWrite(12, LOW);
-        etapa = 1;
-        tempoAnterior = tempoAtual;
+
+    case 0: // Etapa 0: acende o LED vermelho por 6 segundos
+      digitalWrite(12, HIGH); // Liga o LED vermelho
+      if (tempoAtual - tempoAnterior >= 6000) { 
+        digitalWrite(12, LOW); // Desliga o LED vermelho
+        etapa = 1;             // Passa para a próxima etapa
+        tempoAnterior = tempoAtual; // Atualiza o tempo de referência
       }
       break;
 
-    case 1: // LED 8 aceso por 4s
-      digitalWrite(8, HIGH);
+    case 1: // Etapa 1: acende o LED amarelo por 4 segundos
+      digitalWrite(8, HIGH); // Liga o LED amarelo
       if (tempoAtual - tempoAnterior >= 4000) {
-        digitalWrite(8, LOW);
-        etapa = 2;
-        tempoAnterior = tempoAtual;
+        digitalWrite(8, LOW); // Desliga o LED amarelo
+        etapa = 2;            // Passa para a próxima etapa
+        tempoAnterior = tempoAtual; // Atualiza o tempo
       }
       break;
 
-    case 2: // LED 10 aceso por 2s
-      digitalWrite(10, HIGH);
+    case 2: // Etapa 2: acende o LED azul por 2 segundos
+      digitalWrite(10, HIGH); // Liga o LED azul
       if (tempoAtual - tempoAnterior >= 2000) {
-        digitalWrite(10, LOW);
-        etapa = 0; // reinicia o ciclo
-        tempoAnterior = tempoAtual;
+        digitalWrite(10, LOW); // Desliga o LED azul
+        etapa = 0;             // Volta para a primeira etapa (reinicia o ciclo)
+        tempoAnterior = tempoAtual; // Atualiza o tempo
       }
       break;
   }
 }
+
 
 ```
 
@@ -95,7 +103,7 @@ void loop() {
 | Temporização adequada conforme tempos medidos com auxílio de algum instrumento externo | Até 3 | Até 1,5 | 0  | O tempo está correto em cada led
 | Código implementa corretamente as fases do semáforo e estrutura do código (variáveis representativas e comentários) | Até 3 | Até 1,5 | 0 | Código foi comentado 
 | Ir além: Implementou um componente de extra, fez com millis() ao invés do delay() e/ou usou ponteiros no código | Até 1 | Até 0,5 | 0 | Usou milles
-| **Pontuação Total** | 3 | 3 | 3 | 1 |
+| **Pontuação Total** | Total: 10 pontos |  |  |  |
 
 
 
@@ -109,5 +117,5 @@ void loop() {
 | Temporização adequada conforme tempos medidos com auxílio de algum instrumento externo | Até 3 | Até 1,5 | 0  | Tempo batento com o necessário
 | Código implementa corretamente as fases do semáforo e estrutura do código (variáveis representativas e comentários) | Até 3 | Até 1,5 | 0 | Código bem comentado 
 | Ir além: Implementou um componente de extra, fez com millis() ao invés do delay() e/ou usou ponteiros no código | Até 1 | Até 0,5 | 0 | Usou milles
-| **Pontuação Total** | 3 | 3 | 3 | 1 |
+| **Pontuação Total** | Total: 10 pontos |  |  |  |
 
