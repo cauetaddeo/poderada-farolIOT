@@ -67,3 +67,18 @@ void loop() {
 | Jumpers (macho-macho / macho-fêmea)| 13             | Realizam as conexões entre o Arduino, os resistores e os LEDs.                         |
 | Estrutura de madeira (suporte)     | 1              | Suporte físico no formato de farol, onde os LEDs foram encaixados.                     |
 
+
+
+
+### Algumas fotos da montagem:
+
+
+1.1:
+![Imagem do WhatsApp de 2025-10-28 à(s) 14 22 44_603857ea](https://github.com/user-attachments/assets/39ce2942-8d6b-420d-b5ed-b0e828f6625e)
+
+1.2:
+![Imagem do WhatsApp de 2025-10-28 à(s) 14 22 44_dada1f46](https://github.com/user-attachments/assets/9b220086-080d-40b5-9718-477ab54832cb)
+
+1.3:
+![Imagem do WhatsApp de 2025-10-28 à(s) 14 22 44_fa2ce59f](https://github.com/user-attachments/assets/2200a93c-f7aa-486f-bb51-10b26f9383d6)
+
