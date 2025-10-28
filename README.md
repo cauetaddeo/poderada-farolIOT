@@ -64,7 +64,7 @@ void loop() {
 | LED Azul                           | 1              | Representa o sinal de **siga** (ou personalizado conforme o projeto IoT).              |
 | Arduino Uno                        | 1              | Microcontrolador responsável por controlar os LEDs e a lógica do farol.                |
 | Resistores                         | 3              | Limitam a corrente dos LEDs, evitando que queimem.                                     |
-| Jumpers (macho-macho / macho-fêmea)| 13             | Realizam as conexões entre o Arduino, os resistores e os LEDs.                         |
+| Jumpers (macho-macho / macho-fêmea)| 11             | Realizam as conexões entre o Arduino, os resistores e os LEDs.                         |
 | Estrutura de madeira (suporte)     | 1              | Suporte físico no formato de farol, onde os LEDs foram encaixados.                     |
 
 
