@@ -15,49 +15,61 @@ unsigned long tempoAnterior = 0;
 // Variável que indica em qual parte do ciclo o farol está
 int etapa = 0;
 
+// Ponteiro que aponta para a variável 'etapa'
+int *ptrEtapa = &etapa;
+
 void setup() {
   // Define os pinos dos LEDs como saídas
   pinMode(12, OUTPUT); // LED vermelho
   pinMode(8, OUTPUT);  // LED amarelo
   pinMode(10, OUTPUT); // LED azul
+
+  // Inicia a comunicação com o monitor serial
   Serial.begin(9600);
 }
 
 void loop() {
-  // Pega o tempo atual desde que o Arduino foi ligado 
+  // Pega o tempo atual desde que o Arduino foi ligado
   unsigned long tempoAtual = millis();
 
+  // Mostra o valor atual da etapa pelo ponteiro
+  Serial.print("Etapa atual (via ponteiro): ");
+  Serial.println(*ptrEtapa); // Usa o * para acessar o valor de 'etapa'
+
   // Escolhe o que fazer dependendo da etapa do ciclo
-  switch (etapa) {
+  switch (*ptrEtapa) {  // Usa o valor apontado pelo ponteiro
 
-    case 0: // Etapa 0: acende o LED vermelho por 6 segundos
-      digitalWrite(12, HIGH); // Liga o LED vermelho
-      if (tempoAtual - tempoAnterior >= 6000) { 
-        digitalWrite(12, LOW); // Desliga o LED vermelho
-        etapa = 1;             // Passa para a próxima etapa
-        tempoAnterior = tempoAtual; // Atualiza o tempo de referência
+    case 0: // Etapa 0: LED vermelho por 6 segundos
+      digitalWrite(12, HIGH);
+      if (tempoAtual - tempoAnterior >= 6000) {
+        digitalWrite(12, LOW);
+        *ptrEtapa = 1;           // Altera a etapa via ponteiro
+        tempoAnterior = tempoAtual;
       }
       break;
 
-    case 1: // Etapa 1: acende o LED amarelo por 4 segundos
-      digitalWrite(8, HIGH); // Liga o LED amarelo
+    case 1: // Etapa 1: LED amarelo por 4 segundos
+      digitalWrite(8, HIGH);
       if (tempoAtual - tempoAnterior >= 4000) {
-        digitalWrite(8, LOW); // Desliga o LED amarelo
-        etapa = 2;            // Passa para a próxima etapa
-        tempoAnterior = tempoAtual; // Atualiza o tempo
+        digitalWrite(8, LOW);
+        *ptrEtapa = 2;           // Altera via ponteiro
+        tempoAnterior = tempoAtual;
       }
       break;
 
-    case 2: // Etapa 2: acende o LED azul por 2 segundos
-      digitalWrite(10, HIGH); // Liga o LED azul
+    case 2: // Etapa 2: LED azul por 2 segundos
+      digitalWrite(10, HIGH);
       if (tempoAtual - tempoAnterior >= 2000) {
-        digitalWrite(10, LOW); // Desliga o LED azul
-        etapa = 0;             // Volta para a primeira etapa (reinicia o ciclo)
-        tempoAnterior = tempoAtual; // Atualiza o tempo
+        digitalWrite(10, LOW);
+        *ptrEtapa = 0;           // Reinicia o ciclo via ponteiro
+        tempoAnterior = tempoAtual;
       }
       break;
   }
+
+  delay(200); // Pequena pausa só para evitar prints excessivos no Serial Monitor
 }
+
 
 
 ```
